@@ -8,6 +8,11 @@ const DEMOS = [
     description: "Drag a ball around",
   },
   {
+    id: "pan-gesture-with-velocity",
+    title: "Pan Gesture with Velocity",
+    description: "Drag a ball around and let it fly with its velocity",
+  },
+  {
     id: "transitions",
     title: "Transitions",
     description: "Enter/exit animations",

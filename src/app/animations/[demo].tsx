@@ -1,10 +1,12 @@
 import { PanGestureDemo } from "@/components/demos/pan-gesture";
+import { PanGestureWithVelocityDemo } from "@/components/demos/pan-gesture-with-velocity";
 import { TransitionsDemo } from "@/components/demos/transitions";
 import { useLocalSearchParams } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 const DEMO_MAP: Record<string, React.ComponentType> = {
   "pan-gesture": PanGestureDemo,
+  "pan-gesture-with-velocity": PanGestureWithVelocityDemo,
   transitions: TransitionsDemo,
 };
 
