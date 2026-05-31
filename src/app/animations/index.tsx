@@ -17,6 +17,11 @@ const DEMOS = [
     title: "Transitions",
     description: "Enter/exit animations",
   },
+  {
+    id: "controlled-looped-animation",
+    title: "Controlled Looped Animation",
+    description: "Play/pause a looped animation",
+  },
 ];
 
 export default function AnimationsCatalog() {

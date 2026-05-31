@@ -1,3 +1,4 @@
+import { ControlledLoopedAnimationDemo } from "@/components/demos/controlled-looped-animation";
 import { PanGestureDemo } from "@/components/demos/pan-gesture";
 import { PanGestureWithVelocityDemo } from "@/components/demos/pan-gesture-with-velocity";
 import { TransitionsDemo } from "@/components/demos/transitions";
@@ -8,6 +9,7 @@ const DEMO_MAP: Record<string, React.ComponentType> = {
   "pan-gesture": PanGestureDemo,
   "pan-gesture-with-velocity": PanGestureWithVelocityDemo,
   transitions: TransitionsDemo,
+  "controlled-looped-animation": ControlledLoopedAnimationDemo,
 };
 
 export default function DemoScreen() {

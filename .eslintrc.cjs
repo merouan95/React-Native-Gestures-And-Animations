@@ -1,0 +1,8 @@
+module.exports = {
+  root: true,
+  extends: ["expo"],
+  plugins: ["react-hooks"],
+  rules: {
+    "react-hooks/exhaustive-deps": "warn",
+  },
+};
