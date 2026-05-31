@@ -17,7 +17,7 @@ import Animated, {
 const ballDiameter = 80;
 const windowWidth = Dimensions.get("window").width;
 
-export const PanGestureWithVelocityDemo = memo(() => {
+const PanGestureWithVelocityDemoComponent = () => {
   const [containerHeight, setContainerHeight] = useState(0);
 
   const translationMaximalSurAxeX = windowWidth - ballDiameter;
@@ -84,7 +84,11 @@ export const PanGestureWithVelocityDemo = memo(() => {
       </GestureDetector>
     </View>
   );
-});
+};
+
+export const PanGestureWithVelocityDemo = memo(
+  PanGestureWithVelocityDemoComponent,
+);
 
 const styles = StyleSheet.create({
   container: {

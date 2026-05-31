@@ -21,7 +21,7 @@ interface ChatBubbleProps {
   progress: SharedValue<number>;
 }
 
-export const ChatBubble = memo(({ progress }: ChatBubbleProps) => {
+const ChatBubbleComponent = ({ progress }: ChatBubbleProps) => {
   // Messenger Buble Container Size
   const { width } = useWindowDimensions();
   const bubbleWidth = width * 0.8;
@@ -53,4 +53,6 @@ export const ChatBubble = memo(({ progress }: ChatBubbleProps) => {
       </View>
     </View>
   );
-});
+};
+
+export const ChatBubble = memo(ChatBubbleComponent);

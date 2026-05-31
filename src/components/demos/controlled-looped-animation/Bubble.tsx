@@ -26,7 +26,7 @@ interface BubbleProps {
   end: number;
 }
 
-export const Bubble = memo(({ progress, start, end }: BubbleProps) => {
+const BubbleComponent = ({ progress, start, end }: BubbleProps) => {
   const animatedStyle = useAnimatedStyle(() => {
     const opacity = interpolate(
       progress.value,
@@ -47,4 +47,6 @@ export const Bubble = memo(({ progress, start, end }: BubbleProps) => {
   }, [progress, start, end]);
 
   return <Animated.View style={[styles.bubble, animatedStyle]} />;
-});
+};
+
+export const Bubble = memo(BubbleComponent);

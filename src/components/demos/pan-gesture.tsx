@@ -1,17 +1,17 @@
 import { memo } from "react";
 import { StyleSheet, View } from "react-native";
 import {
-  ComposedGesture,
-  Gesture,
-  GestureDetector,
-  GestureType,
+    ComposedGesture,
+    Gesture,
+    GestureDetector,
+    GestureType,
 } from "react-native-gesture-handler";
 import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
+    useAnimatedStyle,
+    useSharedValue,
 } from "react-native-reanimated";
 
-export const PanGestureDemo = memo(() => {
+const PanGestureDemoComponent = () => {
   const startX = useSharedValue(0);
   const startY = useSharedValue(0);
 
@@ -44,7 +44,9 @@ export const PanGestureDemo = memo(() => {
       </GestureDetector>
     </View>
   );
-});
+};
+
+export const PanGestureDemo = memo(PanGestureDemoComponent);
 
 const styles = StyleSheet.create({
   container: {
