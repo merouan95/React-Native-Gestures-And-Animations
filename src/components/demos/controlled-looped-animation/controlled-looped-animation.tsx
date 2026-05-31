@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     backgroundColor: StyleGuide.palette.background,
   },
 });
-export const ControlledLoopedAnimationDemo = memo(() => {
+const ControlledLoopedAnimationDemoComponent = () => {
   const [play, setPlay] = useState(false);
   const progress = useSharedValue(0);
 
@@ -50,4 +50,8 @@ export const ControlledLoopedAnimationDemo = memo(() => {
       </View>
     </View>
   );
-});
+};
+
+export const ControlledLoopedAnimationDemo = memo(
+  ControlledLoopedAnimationDemoComponent,
+);
