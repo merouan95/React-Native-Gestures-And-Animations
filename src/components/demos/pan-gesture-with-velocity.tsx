@@ -49,7 +49,7 @@ export const PanGestureWithVelocityDemo = memo(() => {
         translationMaximalSurAxeY,
       );
     })
-    .onEnd((event, success) => {
+    .onFinalize((event, success) => {
       if (!success) return;
 
       translateX.value = withDecay({
